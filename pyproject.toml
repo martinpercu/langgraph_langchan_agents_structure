@@ -1,0 +1,21 @@
+[project]
+name = "langchain-agent"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "langchain>=1.0.0",
+    "langchain-openai>=1.0.0",
+    "langgraph>=1.0.0",
+]
+
+[dependency-groups]
+dev = [
+    "grandalf>=0.8",
+    "ipykernel>=7.0.1",
+    "langgraph-cli[inmem,inmen]>=0.4.4",
+]
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["*"]
