@@ -81,3 +81,8 @@ include = ["*"]
 - In notebooks import API keys
 - Check the "from langchain.chat_models import init_chat_model". Very useful to declare any LLM doesn't matter if OpenAi Anthropic Gemini whatever. 
 - The agent "simple-llm" has the LLM integrated in the node_1.
+
+## Rag (basic)
+- Using a openAI vector store. (we need the VectorStore ID)
+- In notebook rag-basic implementing the file_search_tool using ==> bind_tools([file_search_tool]).
+- In the agent rag-basic.py is important to understand the basic rag is will not work find if we send all the "history". So we send only the last message. (of course the issues is the model lost the memory of the conversation, this is a basic RAG implementation).
